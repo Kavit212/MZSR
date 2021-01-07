@@ -20,8 +20,7 @@ class Train(object):
         self.scale= scale
         self.num_of_data=num_of_data
         self.conf=conf
-        self.model_num=model_num
-
+       
         self.input = tf.placeholder(dtype=tf.float32,shape=[None,None,None,self.CHANNEL])
         self.label = tf.placeholder(dtype=tf.float32,shape=[None,None,None,self.CHANNEL])
 
