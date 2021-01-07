@@ -4,7 +4,7 @@ from imresize import imresize
 from utils import *
 
 class Train(object):
-    def __init__(self, trial, step, size, batch_size, learning_rate, max_epoch, tfrecord_path, checkpoint_dir, scale,num_of_data, conf, model_num):
+    def __init__(self, trial, step, size, batch_size, learning_rate, max_epoch, tfrecord_path, checkpoint_dir, scale,num_of_data, conf):
 
         print('Initialize Training')
         self.trial=trial
