@@ -41,5 +41,5 @@ TASK_BATCH_SIZE=8
 TASK_LR=1e-2
 
 # Loading tfrecord and saving paths
-TFRECORD_PATH='train_SR_MZSR.tfrecord'
+TFRECORD_PATH='/content/drive/My Drive/MZSR/train_MZSR.tfrecord'
 CHECKPOINT_DIR='SR'
