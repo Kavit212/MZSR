@@ -16,6 +16,8 @@ EPOCH = 20000
 LEARNING_RATE = 4e-4
 CHECK_POINT_DIR = 'SR'
 SCALE = 2
+MODEL_NUM = 2
+
 
 def build_parser():
     parser = ArgumentParser()
@@ -42,7 +44,7 @@ def main():
 
     Trainer=train.Train(trial=options.trial,step=options.global_step,size=[HEIGHT,WIDTH,CHANNEL], batch_size=BATCH_SIZE,
                         learning_rate=LEARNING_RATE, max_epoch=EPOCH,tfrecord_path=TF_RECORD_PATH,checkpoint_dir=CHECK_POINT_DIR,
-                        scale=SCALE,num_of_data=NUM_OF_DATA, conf=conf)
+                        scale=SCALE,num_of_data=NUM_OF_DATA,model_num=MODEL_NUM,conf=conf)
     Trainer.run()
 
 if __name__ == '__main__':
