@@ -11,7 +11,7 @@ class Test(object):
         self.display_iter = 1
 
         self.upscale_method= 'cubic'
-        self.noise_level = 3.0
+        self.noise_level = 0.0
 
         self.back_projection=True
         self.back_projection_iters=4
