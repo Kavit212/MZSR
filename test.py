@@ -13,7 +13,7 @@ class Test(object):
         self.upscale_method= 'cubic'
         self.noise_level = 0.0
 
-        self.back_projection=True
+        self.back_projection=False
         self.back_projection_iters=4
 
         self.model_path=model_path
